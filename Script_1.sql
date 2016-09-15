@@ -46,10 +46,15 @@ CREATE TABLE publicacao (
     CONSTRAINT publicacao_pk PRIMARY KEY (codigo)
 );
 
+CREATE TABLE alunoPos (
+    matricula             INT,
+    titulacao             VARCHAR(10) NOT NULL,
+    CONSTRAINT aluno_pos_pk PRIMARY KEY (matricula),
+    CONSTRAINT titulacao_aluno_pos CHECK (UPPER(titulacao) IN ('MESTRADO', 'DOUTORADO', 'POS-DOCTOR'))   
+);
+
 
 ALTER TABLE professor ADD CONSTRAINT professor_fk FOREIGN KEY (departamentoCod) REFERENCES departamento (codigo) deferrable;
 ALTER TABLE departamento ADD CONSTRAINT departamento_fk FOREIGN KEY (coordenador) REFERENCES professor (matricula) deferrable;
 ALTER TABLE pessoa ADD CONSTRAINT pessoa_fk FOREIGN KEY (publicacao) REFERENCES publicacao (codigo) deferrable;
 ALTER TABLE publicacao ADD CONSTRAINT publicacao_fk FOREIGN KEY (autor) REFERENCES pessoa (matricula) deferrable;
-
-
