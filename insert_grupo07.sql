@@ -214,6 +214,27 @@ INSERT INTO departamento (cod, nome, endereco, coordenador)
 VALUES (915205, 'DART', 'Rua Aprigio Veloso, 882', 993054760);
 
 
+-- Inserir agente financiador
+
+INSERT INTO agenteFinanciador(cod, nome, email, endereco)
+VALUES(257331, 'José Eusébio da Silva', 'jose.eusebio@gmail.com', 'Rua Aprigio Veloso, 267');
+
+INSERT INTO agenteFinanciador(cod, nome, email, endereco)
+VALUES(257332, 'Matusalém Silvano Souza', 'matusa.silvano@gmail.com', 'Rua Aprigio Veloso, 267');
+
+INSERT INTO agenteFinanciador(cod, nome, email, endereco)
+VALUES(257333, 'Juliana Soledade de Araújo', 'juliana_araujo@yahoo.com.br', 'Rua Aprigio Veloso, 267');
+
+INSERT INTO agenteFinanciador(cod, nome, email, endereco)
+VALUES(257334, 'Anna Furtado Lima', 'ana_2706@hotmail.com', 'Rua Aprigio Veloso, 267');
+
+INSERT INTO agenteFinanciador(cod, nome, email, endereco)
+VALUES(257335, 'Mariano de Brito Cunha', 'mariano_cunha@msn.com.br', 'Rua Aprigio Veloso, 267');
+
+INSERT INTO agenteFinanciador(cod, nome, email, endereco)
+VALUES(257336, 'Deusimar Santos', 'deusimar_santos@gmail.com', 'Rua Aprigio Veloso, 267');
+
+
 -- Inserir laboratorio
 
 INSERT INTO laboratorio (cod, nome, localizacao)
@@ -250,7 +271,7 @@ INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador
 VALUES (6253444, 'Tecnologia e Sociedade', 'Análise dos impactos sociais oriundos dos avanços tecnológicos', 2500, TO_DATE('2016','YYYY'), TO_DATE('2017','YYYY'), 993054758);
 
 
--- Inserir professor-projeto
+-- Inserir professor projeto
 
 INSERT INTO professor_projeto(professor, projeto)
 VALUES (993054754, 6253500);
