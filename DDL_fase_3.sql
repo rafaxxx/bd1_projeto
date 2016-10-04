@@ -139,24 +139,24 @@ ALTER TABLE agente_telefone ADD (
 ALTER TABLE aluno ADD (
   FOREIGN KEY (matr) REFERENCES pessoa(matr),
   FOREIGN KEY (codarea, codsubarea) REFERENCES linhaPesquisa(codarea, codsubarea),
-  FOREIGN KEY (projeto) REFERENCES projeto(cod))
-  ON DELETE CASCADE;
+  FOREIGN KEY (projeto) REFERENCES projeto(cod)
+  ON DELETE CASCADE);
 ALTER TABLE professor ADD (
   FOREIGN KEY (matr) REFERENCES pessoa(matr),
-  FOREIGN KEY (departamento) REFERENCES departamento(cod))
-  ON DELETE CASCADE;
+  FOREIGN KEY (departamento) REFERENCES departamento(cod) 
+  ON DELETE CASCADE);
 ALTER TABLE graduacao ADD (
   FOREIGN KEY (aluno) REFERENCES aluno(matr),
   FOREIGN KEY (supervisor) REFERENCES pos(aluno));
 ALTER TABLE pos ADD (
-  FOREIGN KEY (aluno) REFERENCES aluno(matr))
-  ON DELETE CASCADE;
+  FOREIGN KEY (aluno) REFERENCES aluno(matr) 
+  ON DELETE CASCADE);
 ALTER TABLE pos ADD (
-  FOREIGN KEY (orientador) REFERENCES professor(matr))
-  ON DELETE CASCADE;
+  FOREIGN KEY (orientador) REFERENCES professor(matr) 
+  ON DELETE CASCADE);
 ALTER TABLE publicacao ADD (
-  FOREIGN KEY (projeto) REFERENCES projeto(cod))
-  ON DELETE CASCADE;
+  FOREIGN KEY (projeto) REFERENCES projeto(cod) 
+  ON DELETE CASCADE);
 ALTER TABLE publicacao_pessoa ADD (
   FOREIGN KEY(publicacao) REFERENCES publicacao(cod),
   FOREIGN KEY (pessoa) REFERENCES pessoa(matr));
@@ -169,8 +169,8 @@ ALTER TABLE professor_projeto ADD (
   FOREIGN KEY(professor) REFERENCES professor(matr),
   FOREIGN KEY(projeto) REFERENCES projeto(cod));
 ALTER TABLE departamento ADD (
-  FOREIGN KEY(coordenador) REFERENCES professor(matr))
-  ON DELETE CASCADE;
+  FOREIGN KEY(coordenador) REFERENCES professor(matr)
+  ON DELETE CASCADE);
 ALTER TABLE projeto_agente ADD (
   FOREIGN KEY(projeto) REFERENCES projeto(cod),
   FOREIGN KEY(agente) REFERENCES agenteFinanciador(cod));
@@ -180,8 +180,8 @@ ALTER TABLE projeto_laboratorio ADD (
   FOREIGN KEY(projeto) REFERENCES projeto(cod),
   FOREIGN KEY(laboratorio) REFERENCES laboratorio(cod));
 ALTER TABLE projeto ADD (
-  FOREIGN KEY(coordenador) REFERENCES professor(matr))
-  ON DELETE CASCADE;
+  FOREIGN KEY(coordenador) REFERENCES professor(matr)
+  ON DELETE CASCADE);
 ALTER TABLE projeto_linhaPesquisa ADD (
   FOREIGN KEY (cod) REFERENCES projeto(cod),
   FOREIGN KEY (codarea, codsubarea) REFERENCES linhaPesquisa(codarea, codsubarea));
