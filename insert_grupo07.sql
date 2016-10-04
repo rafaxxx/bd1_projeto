@@ -1,10 +1,10 @@
 -- Inserir pessoa
 
 INSERT INTO pessoa (matr, nome, datanasc) 
-VALUES (993054738, 'Jo„o Carlos', TO_DATE('04121980','DDMMYYYY'));
+VALUES (993054738, 'João Carlos', TO_DATE('04121980','DDMMYYYY'));
 
 INSERT INTO pessoa (matr, nome, datanasc) 
-VALUES (993054740, 'Cl·udio Baptista', TO_DATE('14081960','DDMMYYYY'));
+VALUES (993054740, 'Cláudio Baptista', TO_DATE('14081960','DDMMYYYY'));
 
 INSERT INTO pessoa (matr, nome, datanasc) 
 VALUES (993054742, 'Camilla Alves', TO_DATE('12021989','DDMMYYYY'));
@@ -13,7 +13,7 @@ INSERT INTO pessoa (matr, nome, datanasc)
 VALUES (993054744, 'Raquel Queiroz', TO_DATE('02051991','DDMMYYYY'));
 
 INSERT INTO pessoa (matr, nome, datanasc) 
-VALUES (993054746, 'Jose Andrade', TO_DATE('11031989','DDMMYYYY'));
+VALUES (993054746, 'José Andrade', TO_DATE('11031989','DDMMYYYY'));
 
 INSERT INTO pessoa (matr, nome, datanasc) 
 VALUES (993054748, 'Mariane Silva', TO_DATE('21061989','DDMMYYYY'));
@@ -31,7 +31,7 @@ INSERT INTO pessoa (matr, nome, datanasc)
 VALUES (993054756, 'Amauri Alvez', TO_DATE('25071954','DDMMYYYY'));
 
 INSERT INTO pessoa (matr, nome, datanasc) 
-VALUES (993054758, 'Jose Lopez', TO_DATE('19071954','DDMMYYYY'));
+VALUES (993054758, 'José Lopez', TO_DATE('19071954','DDMMYYYY'));
 
 INSERT INTO pessoa (matr, nome, datanasc) 
 VALUES (993054760, 'Livia Ribeiro', TO_DATE('20091954','DDMMYYYY'));
@@ -103,22 +103,22 @@ INSERT INTO professor (matr, titulo, departamento)
 VALUES (993054760, 'Mestrado', 915205);
 
 
--- Inserir departamento
+-- Inserir graduacao
 
-INSERT INTO departamento (cod, nome, endereco, coordenador) 
-VALUES (915203, 'DME', 'Rua Aprigio Veloso, 882', 993054738);
+INSERT INTO graduacao (aluno, supervisor) 
+VALUES (993054750, 993054742);
 
-INSERT INTO departamento (cod, nome, endereco, coordenador) 
-VALUES (915202, 'CEEI', 'Rua Aprigio Veloso, 882', 993054754);
+INSERT INTO graduacao (aluno, supervisor) 
+VALUES (993054762, 993054746);
 
-INSERT INTO departamento (cod, nome, endereco, coordenador) 
-VALUES (915201, 'DSC', 'Rua Aprigio Veloso, 882', 993054740);
+INSERT INTO graduacao (aluno, supervisor) 
+VALUES (993054764, 993054746);
 
-INSERT INTO departamento (cod, nome, endereco, coordenador) 
-VALUES (915204, 'CH', 'Rua Aprigio Veloso, 882', 993054758);
+INSERT INTO graduacao (aluno, supervisor) 
+VALUES (993054766, 993054744);
 
-INSERT INTO departamento (cod, nome, endereco, coordenador) 
-VALUES (915205, 'DART', 'Rua Aprigio Veloso, 882', 993054760);
+INSERT INTO graduacao (aluno, supervisor) 
+VALUES (993054768, 993054748);
 
 
 -- Inserir pos
@@ -139,63 +139,29 @@ INSERT INTO pos (aluno, titulo, orientador)
 VALUES (993054742, 'Mestrado', 993054758);
 
 
--- Inserir graduacao
-
-INSERT INTO graduacao (aluno, supervisor) 
-VALUES (993054750, 993054742);
-
-INSERT INTO graduacao (aluno, supervisor) 
-VALUES (993054762, 993054746);
-
-INSERT INTO graduacao (aluno, supervisor) 
-VALUES (993054764, 993054746);
-
-INSERT INTO graduacao (aluno, supervisor) 
-VALUES (993054766, 993054744);
-
-INSERT INTO graduacao (aluno, supervisor) 
-VALUES (993054768, 993054748);
-
--- Inserir projeto
-
-INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
-VALUES (6253500, 'Mineracao de dados', 'Descricao sobre projeto Mineracao de dados', 5000, TO_DATE('2014','YYYY'), TO_DATE('2016','YYYY'), 993054754);
-
-INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
-VALUES (6253452, 'Analise Probabilistica em Inteligencia Artificial', 'Uso de programas estoc·sticos para solucionar problemas em IA', 10000, TO_DATE('2014','YYYY'), TO_DATE('2018','YYYY'), 993054738);
-
-INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
-VALUES (6253560, 'Analise de Meta Modelos', 'Analise de meta modelos', 3000, TO_DATE('2016','YYYY'), TO_DATE('2017','YYYY'), 993054754);
-
-INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
-VALUES (6253850, 'Analise de Sistemas da InformaÁ„o', 'Analise de Sistemas da Informacao', 4000, TO_DATE('2015','YYYY'), TO_DATE('2016','YYYY'), 993054740);
-
-INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
-VALUES (6253444, 'Tecnologia e Sociedade', 'Analise dos impactos sociais oriundos dos avancos tecnologicos', 2500, TO_DATE('2016','YYYY'), TO_DATE('2017','YYYY'), 993054758);
-
-
 -- Inserir publicacao
 
 INSERT INTO publicacao (cod, titulo, ano, veiculo, projeto)
-VALUES(140312832, 'AVALIANDO SISTEMAS DE INFORMA«√O NOVOS', 2014, 'REVISTA EXAME', 6253850 );
+VALUES(140312832, 'Avaliando Novos Sistemas de Informação', 2014, 'REVISTA EXAME', 6253850 );
 
 INSERT INTO publicacao (cod, titulo, ano, veiculo, projeto)
-VALUES (120888179, 'CONSTRUINDO MODELOS DE SISTEMAS', 2015, 'REVISTA NATIONAL GEOGRAPHIC', 6253560);
+VALUES (120888179, 'Construindo Novos Modelos de Sistemas', 2015, 'REVISTA NATIONAL GEOGRAPHIC', 6253560);
 
 INSERT INTO publicacao (cod, titulo, ano, veiculo, projeto)
-VALUES (876747683, 'ANALISE DE METODOLOGIA DE SISTEMAS DE INFORMA«√O', 2014, 'REVISTA MUNDO ESTRANHO', 6253850);
+VALUES (876747683, 'Análise da Metodologia de Sistemas de Informação', 2014, 'ACM', 6253850);
 
 INSERT INTO publicacao (cod, titulo, ano, veiculo, projeto)
-VALUES (926903129, 'CRIANDO SISTEMAS A PARTIR DE MODELOS M…DICOS', 2015, 'REVISTA CI NCIA', 6253452);
+VALUES (926903129, 'Criando Sistemas de Modelos Médicos', 2015, 'REVISTA SCIENCE', 6253452);
 
 INSERT INTO publicacao (cod, titulo, ano, veiculo, projeto)
-VALUES (926903130, 'DESENVOLVIMENTO DA TECNOLOGIA DA INFORMA«√O', 2014, 'REVISTA TECNOLOGIA', 6253850);
+VALUES (926903130, 'Desenvolvimento da Tecnologia da Informação', 2014, 'ACM', 6253850);
 
 INSERT INTO publicacao (cod, titulo, ano, veiculo, projeto)
-VALUES (926903131, 'ANALISE CRITICA SOBRE OS AVANCOS TECNOLOGICOS', 2014, 'REVISTA INFORM¡TICA', 6253444);
+VALUES (926903131, 'Análise Crítica Sobre Avanços Tecnológicos', 2014, 'ACM', 6253444);
 
 
--- Inserir publicaÁ„o pessoa
+-- Inserir publicação pessoa
+
 INSERT INTO publicacao_pessoa (publicacao, pessoa)
 VALUES (120888179, 993054740);
 
@@ -212,7 +178,80 @@ INSERT INTO publicacao_pessoa (publicacao, pessoa)
 VALUES (926903131, 993054760);
 
 
+-- Inserir patente
+
+INSERT INTO patente(cod, projeto, numreg, descricao)
+VALUES(2533487, 6253444, 122245, 'Um estudo sobre sociologia e tecnologia');
+
+INSERT INTO patente(cod, projeto, numreg, descricao)
+VALUES(2533488, 6253850, 122246, 'Um estudo aprofundado sobre sistemas de informação');
+
+INSERT INTO patente(cod, projeto, numreg, descricao)
+VALUES(2533489, 6253500, 122247, 'Um estudo específico sobre mineração de dados em bancos de dados relacionais');
+
+INSERT INTO patente(cod, projeto, numreg, descricao)
+VALUES(2533484, 6253452, 122249, 'Um estudo sobre probabilidade e problemas relacionados a IA');
+
+INSERT INTO patente(cod, projeto, numreg, descricao)
+VALUES(2533485, 6253560, 122248, 'Um estudo básico em UML');
+
+
+-- Inserir departamento
+
+INSERT INTO departamento (cod, nome, endereco, coordenador) 
+VALUES (915203, 'DME', 'Rua Aprigio Veloso, 882', 993054738);
+
+INSERT INTO departamento (cod, nome, endereco, coordenador) 
+VALUES (915202, 'CEEI', 'Rua Aprigio Veloso, 882', 993054754);
+
+INSERT INTO departamento (cod, nome, endereco, coordenador) 
+VALUES (915201, 'DSC', 'Rua Aprigio Veloso, 882', 993054740);
+
+INSERT INTO departamento (cod, nome, endereco, coordenador) 
+VALUES (915204, 'CH', 'Rua Aprigio Veloso, 882', 993054758);
+
+INSERT INTO departamento (cod, nome, endereco, coordenador) 
+VALUES (915205, 'DART', 'Rua Aprigio Veloso, 882', 993054760);
+
+
+-- Inserir laboratorio
+
+INSERT INTO laboratorio (cod, nome, localizacao)
+VALUES (67554343, 'LSI', 'Rua Aprigio Veloso, 535');
+
+INSERT INTO laboratorio (cod, nome, localizacao)
+VALUES (651396372, 'LSD', 'Rua Aprigio Veloso, 555');
+
+INSERT INTO laboratorio (cod, nome, localizacao)
+VALUES (156499386, 'EMBEDDED', 'Rua Aprigio Veloso, 638');
+
+INSERT INTO laboratorio (cod, nome, localizacao)
+VALUES (929862319, 'LSI', 'Rua Aprigio Veloso, 655');
+
+INSERT INTO laboratorio (cod, nome, localizacao)
+VALUES (618880605, 'SPLAB', 'Rua Aprigio Veloso, 520');
+
+
+-- Inserir projeto
+
+INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
+VALUES (6253500, 'Mineração de dados', 'Descrição sobre projeto Mineração de dados', 5000, TO_DATE('2014','YYYY'), TO_DATE('2016','YYYY'), 993054754);
+
+INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
+VALUES (6253452, 'Análise Probabilística em Inteligência Artificial', 'Uso de programas estocásticos para solucionar problemas em IA', 10000, TO_DATE('2014','YYYY'), TO_DATE('2018','YYYY'), 993054738);
+
+INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
+VALUES (6253560, 'Análise de Meta Modelos', 'Análise de Perfís UML', 3000, TO_DATE('2016','YYYY'), TO_DATE('2017','YYYY'), 993054754);
+
+INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
+VALUES (6253850, 'Análise de Sistemas da Informação', 'Teoria dos Sistemas da Informação', 4000, TO_DATE('2015','YYYY'), TO_DATE('2016','YYYY'), 993054740);
+
+INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
+VALUES (6253444, 'Tecnologia e Sociedade', 'Análise dos impactos sociais oriundos dos avanços tecnológicos', 2500, TO_DATE('2016','YYYY'), TO_DATE('2017','YYYY'), 993054758);
+
+
 -- Inserir professor-projeto
+
 INSERT INTO professor_projeto(professor, projeto)
 VALUES (993054754, 6253500);
 
