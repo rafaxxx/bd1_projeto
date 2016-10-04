@@ -1,10 +1,10 @@
 -- Inserir pessoa
 
 INSERT INTO pessoa (matr, nome, datanasc) 
-VALUES (993054738, 'Jo√£o Carlos', TO_DATE('04121980','DDMMYYYY'));
+VALUES (993054738, 'Jo„o Carlos', TO_DATE('04121980','DDMMYYYY'));
 
 INSERT INTO pessoa (matr, nome, datanasc) 
-VALUES (993054740, 'Cl√°udio Baptista', TO_DATE('14081960','DDMMYYYY'));
+VALUES (993054740, 'Cl·udio Baptista', TO_DATE('14081960','DDMMYYYY'));
 
 INSERT INTO pessoa (matr, nome, datanasc) 
 VALUES (993054742, 'Camilla Alves', TO_DATE('12021989','DDMMYYYY'));
@@ -162,13 +162,13 @@ INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador
 VALUES (6253500, 'Mineracao de dados', 'Descricao sobre projeto Mineracao de dados', 5000, TO_DATE('2014','YYYY'), TO_DATE('2016','YYYY'), 993054754);
 
 INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
-VALUES (6253452, 'Analise Probabilistica em Inteligencia Artificial', 'Uso de programas estoc√°sticos para solucionar problemas em IA', 10000, TO_DATE('2014','YYYY'), TO_DATE('2018','YYYY'), 993054738);
+VALUES (6253452, 'Analise Probabilistica em Inteligencia Artificial', 'Uso de programas estoc·sticos para solucionar problemas em IA', 10000, TO_DATE('2014','YYYY'), TO_DATE('2018','YYYY'), 993054738);
 
 INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
 VALUES (6253560, 'Analise de Meta Modelos', 'Analise de meta modelos', 3000, TO_DATE('2016','YYYY'), TO_DATE('2017','YYYY'), 993054754);
 
 INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
-VALUES (6253850, 'Analise de Sistemas da Informa√ß√£o', 'Analise de Sistemas da Informacao', 4000, TO_DATE('2015','YYYY'), TO_DATE('2016','YYYY'), 993054740);
+VALUES (6253850, 'Analise de Sistemas da InformaÁ„o', 'Analise de Sistemas da Informacao', 4000, TO_DATE('2015','YYYY'), TO_DATE('2016','YYYY'), 993054740);
 
 INSERT INTO projeto (cod, titulo, descricao, orcamento, inicio, fim, coordenador) 
 VALUES (6253444, 'Tecnologia e Sociedade', 'Analise dos impactos sociais oriundos dos avancos tecnologicos', 2500, TO_DATE('2016','YYYY'), TO_DATE('2017','YYYY'), 993054758);
@@ -177,25 +177,25 @@ VALUES (6253444, 'Tecnologia e Sociedade', 'Analise dos impactos sociais oriundo
 -- Inserir publicacao
 
 INSERT INTO publicacao (cod, titulo, ano, veiculo, projeto)
-VALUES(140312832, 'AVALIANDO SISTEMAS DE INFORMA√á√ÉO NOVOS', 2014, 'REVISTA EXAME', 6253850 );
+VALUES(140312832, 'AVALIANDO SISTEMAS DE INFORMA«√O NOVOS', 2014, 'REVISTA EXAME', 6253850 );
 
 INSERT INTO publicacao (cod, titulo, ano, veiculo, projeto)
 VALUES (120888179, 'CONSTRUINDO MODELOS DE SISTEMAS', 2015, 'REVISTA NATIONAL GEOGRAPHIC', 6253560);
 
 INSERT INTO publicacao (cod, titulo, ano, veiculo, projeto)
-VALUES (876747683, 'ANALISE DE METODOLOGIA DE SISTEMAS DE INFORMA√á√ÉO', 2014, 'REVISTA MUNDO ESTRANHO', 6253850);
+VALUES (876747683, 'ANALISE DE METODOLOGIA DE SISTEMAS DE INFORMA«√O', 2014, 'REVISTA MUNDO ESTRANHO', 6253850);
 
 INSERT INTO publicacao (cod, titulo, ano, veiculo, projeto)
-VALUES (926903129, 'CRIANDO SISTEMAS A PARTIR DE MODELOS M√âDICOS', 2015, 'REVISTA CI√äNCIA', 6253452);
+VALUES (926903129, 'CRIANDO SISTEMAS A PARTIR DE MODELOS M…DICOS', 2015, 'REVISTA CI NCIA', 6253452);
 
 INSERT INTO publicacao (cod, titulo, ano, veiculo, projeto)
-VALUES (926903130, 'DESENVOLVIMENTO DA TECNOLOGIA DA INFORMA√á√ÉO', 2014, 'REVISTA TECNOLOGIA', 6253850);
+VALUES (926903130, 'DESENVOLVIMENTO DA TECNOLOGIA DA INFORMA«√O', 2014, 'REVISTA TECNOLOGIA', 6253850);
 
 INSERT INTO publicacao (cod, titulo, ano, veiculo, projeto)
-VALUES (926903131, 'ANALISE CRITICA SOBRE OS AVANCOS TECNOLOGICOS', 2014, 'REVISTA INFORM√ÅTICA', 6253444);
+VALUES (926903131, 'ANALISE CRITICA SOBRE OS AVANCOS TECNOLOGICOS', 2014, 'REVISTA INFORM¡TICA', 6253444);
 
 
--- Inserir publica√ß√£o pessoa
+-- Inserir publicaÁ„o pessoa
 INSERT INTO publicacao_pessoa (publicacao, pessoa)
 VALUES (120888179, 993054740);
 
